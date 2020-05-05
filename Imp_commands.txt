@@ -1,0 +1,44 @@
+MAC Shortcuts
+Cmd + m : Minimize
+Cmd + h : Hide
+Cmd + w/q : Close
+Cmd + ~ : switch between active windows within app.
+Ctrl + Cmd += : Maximize/Minimize
+Ctrl + Cmd + F : Full Screen Mode
+Use three Finger swipe up for Mission control
+
+rsync -a --inplace  --progress ~/DevWork/Node/ /Volumes/MEMORY-128G/Node
+sent 220962199 bytes  received 439796 bytes  1200010.81 bytes/sec
+total size is 219614722  speedup is 0.99
+
+NOTE : Rsync - avoid z option for local transfers for less overhead
+rsync -auvz --progress ~/DevWork/Node/ /Volumes/MEMORY-128G/Node
+sent 130943995 bytes  received 439796 bytes  658565.37 bytes/sec
+total size is 219614722  speedup is 1.67
+
+sudo rsync -vaE --progress /Volumes/Imp/Tv\ Shows/* /Volumes/Seagate\ Expansion\ Drive/HD\ \ DATA/SUNIL/
+
+Rsync took 5 mins to transfer 10 GB data while copy took 7 mins
+Pause Rsync : ctrl +c
+Resumt : fg or bg command
+
+Check cpu model
+sysctl -n machdep.cpu.brand_string
+Intel(R) Core(TM) i5-5350U CPU @ 1.80GHz
+
+Top : exit by just pressing q
+
+
+Environment variables:
+vim ~/.bash_profile
+
+SPMacBook:bin sunilpatra$ javac -version
+javac 13.0.1
+
+SPMacBook:bin sunilpatra$ /usr/libexec/java_home -V
+Matching Java Virtual Machines (2):
+    13.0.1, x86_64:	"Java SE 13.0.1"	/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home
+    1.8.0_231, x86_64:	"Java SE 8"	/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home
+

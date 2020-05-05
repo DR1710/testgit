@@ -1,0 +1,38 @@
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Sunils-MacBook-Air:~ sunilpatra$ brew doctor
+Your system is ready to brew.
+
+Sunils-MacBook-Air:~ sunilpatra$ brew update
+Already up-to-date.
+
+Installing cask is necessary
+Sunils-MacBook-Air:~ sunilpatra$ brew install cask
+
+
+brew cask list --versions search_name
+
+Sunils-MacBook-Air:~ sunilpatra$ brew cask info google-chrome
+google-chrome: 78.0.3904.70 (auto_updates)
+https://www.google.com/chrome/
+Not installed
+From: https://github.com/Homebrew/homebrew-cask/blob/master/Casks/google-chrome.rb
+==> Name
+Google Chrome
+==> Artifacts
+Google Chrome.app (App)
+Sunils-MacBook-Air:~ sunilpatra$ brew cask install google-chrome
+==> Satisfying dependencies
+==> Downloading https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
+##################################     
+                                   48.2%	
+Brew install git
+
+Sunils-MacBook-Air:~ sunilpatra$ brew list
+cask		gettext		gnutls		libffi		libtasn1	nettle		p11-kit
+emacs		gmp		libevent	libidn2		libunistring	openssl@1.1	unbound
+Sunils-MacBook-Air:~ sunilpatra$ brew cask list
+google-chrome                                                                                          visual-studio-code
+Sunils-MacBook-Air:~ sunilpatra$ brew cask upgrade
+==> No Casks to upgrade

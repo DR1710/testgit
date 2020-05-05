@@ -1,0 +1,32 @@
+Sunils-MacBook-Air:~ sunilpatra$ mysql -u root  -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.18 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.00 sec)
+
+mysql> ALTER user 'root'@'localhost' identified by ‘password’;
+Query OK, 0 rows affected (0.02 sec)
+
+Alter table users modify password varchar(60); // since bcrypt requires 60 character space
+
+Update users set password=‘’ where username=‘Bryan’;
