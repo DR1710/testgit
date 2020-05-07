@@ -1,0 +1,33 @@
+To Find Out Where Java Installed in MAC
+SPMacBook:Home sunilpatra$ /usr/libexec/java_home
+/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home
+SPMacBook:Home sunilpatra$
+SPMacBook:Home sunilpatra$ cd /Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home
+SPMacBook:Home sunilpatra$ ls
+bin	conf	include	jmods	legal	lib	man	release
+
+
+List of JDKS Installed
+SPMacBook:testgit sunilpatra$ /usr/libexec/java_home -V
+Matching Java Virtual Machines (2):
+    13.0.1, x86_64:	"Java SE 13.0.1"	/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home
+    1.8.0_231, x86_64:	"Java SE 8"	/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home
+
+/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home
+
+
+To Switch JDK Version from list of installed JVMS
+$ export JAVA_HOME=`/usr/libexec/java_home -v 13.0
+
+
+leave all JDKs at their default location, under /Library/Java/JavaVirtualMachines. The system will pick the highest version by default.
+
+SPMacBook:bin sunilpatra$ javac -version
+javac 13.0.1
+
+SPMacBook:bin sunilpatra$ /usr/libexec/java_home -V
+Matching Java Virtual Machines (2):
+    13.0.1, x86_64:	"Java SE 13.0.1"	/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home
+    1.8.0_231, x86_64:	"Java SE 8"	/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home
