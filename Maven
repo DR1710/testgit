@@ -4,3 +4,5 @@ Navigate to pom.xml and run below if have tomcat plugin in your pom.xml
 
 To Run Integration Test
 > mvn -P integration verify
+
+Added on Repo Directly
