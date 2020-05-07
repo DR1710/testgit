@@ -1,5 +1,6 @@
 Navigate to pom.xml and run below if have tomcat plugin in your pom.xml
 > mvn clean install tomcat7:run
+> mvn package to build WAR file
 
 To Run Integration Test
 > mvn -P integration verify
